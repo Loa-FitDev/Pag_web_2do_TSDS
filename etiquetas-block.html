@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Etiquetas Block</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="alert alert-warning">Etiquetas Block en HTML</h1>
+
+      <!-- Sección de Párrafos -->
+      <section class="mb-4">
+        <h2>Párrafos - &lt;p&gt;</h2>
+        <!-- Etiqueta p: define un párrafo de texto -->
+        <p>
+          Este es el primer párrafo. Los párrafos son etiquetas de bloque que
+          separan el contenido en bloques distintos, cada uno comenzando en una
+          nueva línea.
+        </p>
+        <!-- Etiqueta p: define otro párrafo de texto -->
+        <p>
+          Este es el segundo párrafo. Los párrafos son fundamentales en la
+          estructura de un documento HTML y ayudan a organizar el contenido de
+          manera legible.
+        </p>
+      </section>
+
+      <!-- Sección de Encabezados -->
+      <section class="mb-4">
+        <h2>Encabezados - &lt;h1&gt; a &lt;h6&gt;</h2>
+        <!-- Etiquetas h1 a h6: definen encabezados de diferentes niveles -->
+        <h3>Encabezado de Nivel 3</h3>
+        <p>Los encabezados estructuran el contenido jerárquicamente.</p>
+        <h4>Encabezado de Nivel 4</h4>
+        <p>Cada nivel de encabezado tiene un tamaño de fuente diferente.</p>
+        <h5>Encabezado de Nivel 5</h5>
+        <h6>Encabezado de Nivel 6 - El más pequeño</h6>
+      </section>
+
+      <!-- Sección de Listas Ordenadas -->
+      <section class="mb-4">
+        <h2>Lista Ordenada - &lt;ol&gt; y &lt;li&gt;</h2>
+        <!-- Etiqueta ol: define una lista ordenada (numerada) -->
+        <!-- Etiqueta li: define un elemento de lista -->
+        <ol>
+          <li>Primer paso: preparar el ambiente de desarrollo</li>
+          <li>Segundo paso: aprender HTML básico</li>
+          <li>Tercer paso: dominar CSS para estilos</li>
+          <li>Cuarto paso: agregar interactividad con JavaScript</li>
+          <li>Quinto paso: implementar un proyecto completo</li>
+        </ol>
+      </section>
+
+      <!-- Sección de Listas Desordenadas -->
+      <section class="mb-4">
+        <h2>Lista Desordenada - &lt;ul&gt; y &lt;li&gt;</h2>
+        <!-- Etiqueta ul: define una lista desordenada (viñetas) -->
+        <!-- Etiqueta li: define un elemento de lista -->
+        <ul>
+          <li>HTML - Estructura del contenido</li>
+          <li>CSS - Estilo y presentación visual</li>
+          <li>JavaScript - Interactividad y lógica</li>
+          <li>Bootstrap - Framework para diseño responsivo</li>
+          <li>Git - Control de versiones</li>
+        </ul>
+      </section>
+
+      <!-- Sección de Listas de Descripción -->
+      <section class="mb-4">
+        <h2>Lista de Descripción - &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h2>
+        <!-- Etiqueta dl: define una lista de descripción -->
+        <!-- Etiqueta dt: define un término -->
+        <!-- Etiqueta dd: define la descripción del término -->
+        <dl>
+          <dt>HTML</dt>
+          <dd>
+            Lenguaje de marcado para crear la estructura de las páginas web.
+          </dd>
+          <dt>CSS</dt>
+          <dd>
+            Lenguaje de estilos para controlar la apariencia visual de los
+            elementos.
+          </dd>
+          <dt>JavaScript</dt>
+          <dd>
+            Lenguaje de programación que agrega interactividad a las páginas
+            web.
+          </dd>
+        </dl>
+      </section>
+
+      <!-- Sección de Tablas -->
+      <section class="mb-4">
+        <h2>Tabla - &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h2>
+        <!-- Etiqueta table: define una tabla -->
+        <!-- Etiqueta tr: define una fila en la tabla -->
+        <!-- Etiqueta th: define una celda de encabezado -->
+        <!-- Etiqueta td: define una celda de datos -->
+        <table class="table table-striped table-bordered">
+          <thead>
+            <!-- Encabezado de la tabla -->
+            <tr>
+              <th>Lenguaje</th>
+              <th>Tipo</th>
+              <th>Descripción</th>
+              <th>Año de Creación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Cuerpo de la tabla con datos -->
+            <tr>
+              <td>HTML</td>
+              <td>Marcado</td>
+              <td>Define la estructura del contenido</td>
+              <td>1993</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Estilos</td>
+              <td>Controla la presentación visual</td>
+              <td>1996</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Programación</td>
+              <td>Agrega interactividad y lógica</td>
+              <td>1995</td>
+            </tr>
+            <tr>
+              <td>Bootstrap</td>
+              <td>Framework</td>
+              <td>Framework para diseño responsivo</td>
+              <td>2011</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Sección de Bloques de Código -->
+      <section class="mb-4">
+        <h2>Bloque de Código - &lt;pre&gt; y &lt;code&gt;</h2>
+        <!-- Etiqueta pre: preserva espacios en blanco y saltos de línea -->
+        <!-- Etiqueta code: define fragmentos de código -->
+        <pre class="bg-light p-3 rounded"><code>&lt;!doctype html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mi Página Web&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <!-- Sección de Divisores -->
+      <section class="mb-4">
+        <h2>Divisor - &lt;hr&gt;</h2>
+        <!-- Etiqueta hr: define una línea horizontal divisoria -->
+        <p>Contenido antes de la línea divisoria.</p>
+        <hr />
+        <p>Contenido después de la línea divisoria.</p>
+      </section>
+
+      <!-- Sección de Blockquote -->
+      <section class="mb-4">
+        <h2>Cita en Bloque - &lt;blockquote&gt;</h2>
+        <!-- Etiqueta blockquote: define una cita larga de otra fuente -->
+        <blockquote class="blockquote">
+          <p class="mb-0">
+            "La programación no se trata solo de escribir código, se trata de
+            resolver problemas de manera creativa y eficiente."
+          </p>
+          <footer class="blockquote-footer">Desarrollador Web</footer>
+        </blockquote>
+      </section>
+
+      <!-- Sección de Dirección -->
+      <section class="mb-4">
+        <h2>Dirección - &lt;address&gt;</h2>
+        <!-- Etiqueta address: define la información de contacto -->
+        <address>
+          <strong>Lokiana - Desarrollo Web</strong><br />
+          Buenos Aires, Argentina<br />
+          Email: <a href="mailto:info@example.com">info@example.com</a><br />
+          Teléfono: <a href="tel:+541234567890">+54 1234 56 7890</a>
+        </address>
+      </section>
+
+      <!-- Sección de Artículo -->
+      <section class="mb-4">
+        <h2>Artículo - &lt;article&gt;</h2>
+        <!-- Etiqueta article: define contenido independiente y autónomo -->
+        <article class="p-3 bg-light rounded">
+          <h3>Introducción a Bootstrap</h3>
+          <p>
+            Bootstrap es un framework de código abierto muy popular para
+            desarrollar sitios web responsivos y móviles. Proporciona una
+            colección de componentes predefinidos que facilitan el desarrollo
+            web rápido.
+          </p>
+          <p>
+            Con Bootstrap, puedes crear diseños profesionales sin necesidad de
+            escribir mucho CSS personalizado. El framework utiliza un sistema
+            de grid de 12 columnas que se adapta a diferentes tamaños de
+            pantalla.
+          </p>
+        </article>
+      </section>
+
+      <!-- Sección de Aside -->
+      <section class="mb-4">
+        <h2>Barra Lateral - &lt;aside&gt;</h2>
+        <!-- Etiqueta aside: define contenido tangencialmente relacionado -->
+        <aside class="p-3 bg-info bg-opacity-10 rounded border-start border-info border-3">
+          <h4>Dato Interesante</h4>
+          <p>
+            Bootstrap fue creado por Mark Otto y Jacob Thornton en Twitter en
+            2011. Desde entonces, se ha convertido en uno de los frameworks
+            más populares para el desarrollo web.
+          </p>
+        </aside>
+      </section>
+
+      <!-- Sección de Footer -->
+      <section class="mb-4">
+        <h2>Pie de Página - &lt;footer&gt;</h2>
+        <!-- Etiqueta footer: define el pie de página de una sección o página -->
+        <footer class="bg-dark text-white p-3 rounded">
+          <p class="mb-0">
+            © 2026 Lokiana - Tecnicatura Superior en Desarrollo de Software.
+            Todos los derechos reservados.
+          </p>
+        </footer>
+      </section>
+
+      <!-- Navegación de Retorno -->
+      <hr />
+      <div class="text-center mt-4 mb-5">
+        <a href="index.html" class="btn btn-primary">← Volver al Inicio</a>
+        <a href="etiquetas-formularios.html" class="btn btn-info"
+          >Ir a Formularios →</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

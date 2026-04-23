@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Etiquetas de Formularios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="alert alert-success">Etiquetas de Formularios en HTML</h1>
+
+      <!-- Sección de Formulario Básico -->
+      <section class="mb-5">
+        <h2>Formulario Básico - &lt;form&gt;</h2>
+        <!-- Etiqueta form: contenedor para campos de entrada de datos -->
+        <form class="p-4 bg-light rounded">
+          <!-- Etiqueta label: define una etiqueta para un campo de entrada -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <!-- Etiqueta input type="text": campo de texto simple -->
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+
+          <!-- Campo de correo electrónico -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <!-- Etiqueta input type="email": campo validado para email -->
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="ejemplo@correo.com"
+            />
+          </div>
+
+          <!-- Campo de contraseña -->
+          <div class="mb-3">
+            <label for="contrasena" class="form-label">Contraseña</label>
+            <!-- Etiqueta input type="password": oculta el texto ingresado -->
+            <input
+              type="password"
+              class="form-control"
+              id="contrasena"
+              placeholder="Ingrese una contraseña"
+            />
+          </div>
+
+          <!-- Campo de número -->
+          <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <!-- Etiqueta input type="number": solo acepta valores numéricos -->
+            <input
+              type="number"
+              class="form-control"
+              id="edad"
+              min="18"
+              max="100"
+              placeholder="18"
+            />
+          </div>
+
+          <!-- Botón de envío -->
+          <!-- Etiqueta button type="submit": envía el formulario -->
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <!-- Etiqueta button type="reset": reinicia los valores del formulario -->
+          <button type="reset" class="btn btn-secondary">Limpiar</button>
+        </form>
+      </section>
+
+      <!-- Sección de Inputs Variados -->
+      <section class="mb-5">
+        <h2>Diferentes Tipos de Inputs</h2>
+        <form class="p-4 bg-light rounded">
+          <!-- Input de búsqueda -->
+          <div class="mb-3">
+            <label for="busqueda" class="form-label">Búsqueda</label>
+            <!-- Etiqueta input type="search": optimizada para búsquedas -->
+            <input
+              type="search"
+              class="form-control"
+              id="busqueda"
+              placeholder="Buscar contenido..."
+            />
+          </div>
+
+          <!-- Input de URL -->
+          <div class="mb-3">
+            <label for="url" class="form-label">Sitio Web</label>
+            <!-- Etiqueta input type="url": valida formato de URL -->
+            <input
+              type="url"
+              class="form-control"
+              id="url"
+              placeholder="https://ejemplo.com"
+            />
+          </div>
+
+          <!-- Input de teléfono -->
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <!-- Etiqueta input type="tel": para números telefónicos -->
+            <input
+              type="tel"
+              class="form-control"
+              id="telefono"
+              placeholder="+54 1234 56 7890"
+            />
+          </div>
+
+          <!-- Input de fecha -->
+          <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+            <!-- Etiqueta input type="date": selector de fecha -->
+            <input type="date" class="form-control" id="fecha" />
+          </div>
+
+          <!-- Input de hora -->
+          <div class="mb-3">
+            <label for="hora" class="form-label">Hora</label>
+            <!-- Etiqueta input type="time": selector de hora -->
+            <input type="time" class="form-control" id="hora" />
+          </div>
+
+          <!-- Input de color -->
+          <div class="mb-3">
+            <label for="color" class="form-label">Color Favorito</label>
+            <!-- Etiqueta input type="color": selector de color -->
+            <input type="color" class="form-control form-control-color" id="color" />
+          </div>
+
+          <!-- Input de rango -->
+          <div class="mb-3">
+            <label for="rango" class="form-label">
+              Nivel de Experiencia (1-10)
+            </label>
+            <!-- Etiqueta input type="range": selector de rango deslizable -->
+            <input
+              type="range"
+              class="form-range"
+              id="rango"
+              min="1"
+              max="10"
+            />
+          </div>
+        </form>
+      </section>
+
+      <!-- Sección de Checkboxes y Radios -->
+      <section class="mb-5">
+        <h2>Checkboxes y Radios</h2>
+        <form class="p-4 bg-light rounded">
+          <h4>Lenguajes de Programación (Checkboxes)</h4>
+          <!-- Etiqueta input type="checkbox": permite múltiples selecciones -->
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="html"
+              value="HTML"
+            />
+            <!-- Etiqueta label asociada a checkbox -->
+            <label class="form-check-label" for="html">HTML</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="css"
+              value="CSS"
+            />
+            <label class="form-check-label" for="css">CSS</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="javascript"
+              value="JavaScript"
+            />
+            <label class="form-check-label" for="javascript">JavaScript</label>
+          </div>
+
+          <h4 class="mt-4">Nivel Educativo (Radios)</h4>
+          <!-- Etiqueta input type="radio": permite una única selección -->
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="nivel"
+              id="primaria"
+              value="primaria"
+            />
+            <!-- Etiqueta label asociada a radio button -->
+            <label class="form-check-label" for="primaria">Primaria</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="nivel"
+              id="secundaria"
+              value="secundaria"
+            />
+            <label class="form-check-label" for="secundaria">Secundaria</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="nivel"
+              id="superior"
+              value="superior"
+            />
+            <label class="form-check-label" for="superior">Educación Superior</label>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sección de Select y Optgroup -->
+      <section class="mb-5">
+        <h2>Listas Desplegables - &lt;select&gt;</h2>
+        <form class="p-4 bg-light rounded">
+          <div class="mb-3">
+            <label for="pais" class="form-label">País</label>
+            <!-- Etiqueta select: crea una lista desplegable -->
+            <select class="form-select" id="pais">
+              <!-- Etiqueta option: define las opciones del select -->
+              <option selected>Seleccione un país...</option>
+              <option value="ar">Argentina</option>
+              <option value="br">Brasil</option>
+              <option value="cl">Chile</option>
+              <option value="co">Colombia</option>
+              <option value="mx">México</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <!-- Etiqueta optgroup: agrupa opciones relacionadas -->
+            <select class="form-select" id="ciudad">
+              <option selected>Seleccione una ciudad...</option>
+              <optgroup label="Argentina">
+                <option value="buenos-aires">Buenos Aires</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="rosario">Rosario</option>
+              </optgroup>
+              <optgroup label="Brasil">
+                <option value="sao-paulo">São Paulo</option>
+                <option value="rio-janeiro">Río de Janeiro</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!-- Select múltiple -->
+          <div class="mb-3">
+            <label for="intereses" class="form-label">Intereses (Seleccione varios)</label>
+            <!-- Etiqueta select con atributo multiple: permite seleccionar múltiples opciones -->
+            <select class="form-select" id="intereses" multiple>
+              <option value="web">Desarrollo Web</option>
+              <option value="mobile">Desarrollo Mobile</option>
+              <option value="bd">Bases de Datos</option>
+              <option value="ia">Inteligencia Artificial</option>
+              <option value="devops">DevOps</option>
+            </select>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sección de Textarea -->
+      <section class="mb-5">
+        <h2>Área de Texto - &lt;textarea&gt;</h2>
+        <form class="p-4 bg-light rounded">
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentarios</label>
+            <!-- Etiqueta textarea: permite escribir múltiples líneas de texto -->
+            <textarea
+              class="form-control"
+              id="comentario"
+              rows="5"
+              placeholder="Escriba sus comentarios aquí..."
+            ></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje Corto</label>
+            <!-- Textarea con dimensiones pequeñas -->
+            <textarea
+              class="form-control"
+              id="mensaje"
+              rows="2"
+              placeholder="Máximo una línea..."
+            ></textarea>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sección de Fieldset y Legend -->
+      <section class="mb-5">
+        <h2>Agrupación de Campos - &lt;fieldset&gt; y &lt;legend&gt;</h2>
+        <form class="p-4 bg-light rounded">
+          <!-- Etiqueta fieldset: agrupa campos relacionados -->
+          <fieldset class="mb-4 p-3 border rounded">
+            <!-- Etiqueta legend: proporciona un título para el fieldset -->
+            <legend class="form-label">Información Personal</legend>
+            <div class="mb-3">
+              <label for="primer-nombre" class="form-label">Primer Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="primer-nombre"
+                placeholder="Primer nombre"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="apellido"
+                placeholder="Apellido"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Otro fieldset -->
+          <fieldset class="p-3 border rounded">
+            <legend class="form-label">Información de Contacto</legend>
+            <div class="mb-3">
+              <label for="email-contacto" class="form-label">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-contacto"
+                placeholder="correo@ejemplo.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="telefono-contacto" class="form-label">Teléfono</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefono-contacto"
+                placeholder="+54 1234 56 7890"
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Sección de Datalist -->
+      <section class="mb-5">
+        <h2>Lista de Datos - &lt;datalist&gt;</h2>
+        <form class="p-4 bg-light rounded">
+          <div class="mb-3">
+            <label for="navegador" class="form-label">Navegador Favorito</label>
+            <!-- Etiqueta input con atributo list: vinculado a un datalist -->
+            <input
+              type="text"
+              class="form-control"
+              id="navegador"
+              list="navegadores"
+              placeholder="Escriba o seleccione..."
+            />
+            <!-- Etiqueta datalist: define opciones sugeridas para un input -->
+            <datalist id="navegadores">
+              <!-- Etiqueta option: define las opciones sugeridas -->
+              <option value="Chrome"></option>
+              <option value="Firefox"></option>
+              <option value="Safari"></option>
+              <option value="Edge"></option>
+              <option value="Opera"></option>
+            </datalist>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sección de Validación HTML -->
+      <section class="mb-5">
+        <h2>Validación HTML</h2>
+        <form class="p-4 bg-light rounded" novalidate>
+          <div class="mb-3">
+            <label for="requerido" class="form-label">Campo Obligatorio</label>
+            <!-- Atributo required: hace que el campo sea obligatorio -->
+            <input
+              type="text"
+              class="form-control"
+              id="requerido"
+              placeholder="Este campo es obligatorio"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="minmax" class="form-label">Número entre 1 y 100</label>
+            <!-- Atributos min y max: definen el rango permitido -->
+            <input
+              type="number"
+              class="form-control"
+              id="minmax"
+              min="1"
+              max="100"
+              placeholder="Ingrese un número"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="patron" class="form-label">Código Postal (3 dígitos)</label>
+            <!-- Atributo pattern: valida contra una expresión regular -->
+            <input
+              type="text"
+              class="form-control"
+              id="patron"
+              pattern="[0-9]{3}"
+              placeholder="Ej: 123"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="longitud" class="form-label">
+              Nombre de Usuario (5-20 caracteres)
+            </label>
+            <!-- Atributos minlength y maxlength: limitan la longitud del texto -->
+            <input
+              type="text"
+              class="form-control"
+              id="longitud"
+              minlength="5"
+              maxlength="20"
+              placeholder="Entre 5 y 20 caracteres"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-success">Enviar Validado</button>
+        </form>
+      </section>
+
+      <!-- Navegación de Retorno -->
+      <hr />
+      <div class="text-center mt-4 mb-5">
+        <a href="index.html" class="btn btn-primary">← Volver al Inicio</a>
+        <a href="etiquetas-block.html" class="btn btn-warning">Ir a Etiquetas Block</a>
+      </div>
+    </div>
+  </body>
+</html>
