@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>CV de Loki Laufeyson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Estructura principal del CV con etiquetas de bloque: header, nav, main, section, article, aside y footer -->
+    <div class="container my-5">
+      <header class="p-4 rounded text-bg-dark">
+        <h1 class="mb-1">Loki Laufeyson</h1>
+        <p class="mb-0">Dios del engaño, estratega y hechicero de Asgard</p>
+      </header>
+
+      <nav class="my-3 d-flex flex-wrap gap-2">
+        <a class="btn btn-outline-primary btn-sm" href="#perfil">Perfil</a>
+        <a class="btn btn-outline-primary btn-sm" href="#experiencia"
+          >Experiencia</a
+        >
+        <a class="btn btn-outline-primary btn-sm" href="#habilidades"
+          >Habilidades</a
+        >
+        <a class="btn btn-outline-primary btn-sm" href="#contacto">Contacto</a>
+      </nav>
+
+      <main>
+        <!-- Sección de perfil con etiquetas inline: strong, em, mark, small, abbr, q, span, code -->
+        <section id="perfil" class="mb-4 p-4 border rounded">
+          <h2>Perfil Profesional</h2>
+          <p>
+            <strong>Loki Laufeyson</strong>, también conocido como
+            <em>"Dios de las Mentiras"</em>, combina
+            <mark>inteligencia táctica</mark>
+            con magia avanzada. Tiene experiencia en diplomacia
+            interdimensional, ilusiones de alto nivel y resolución de conflictos
+            multiversales.
+          </p>
+          <p>
+            Dominio de <abbr title="Asgardian Mystic Arts">AMA</abbr>, uso de
+            <code>proyecciones astrales</code>, comunicación en
+            <span class="text-success">nueve reinos</span> y enfoque en
+            resultados <small>(incluso si son caóticos)</small>.
+          </p>
+          <p>Frase personal: <q>El poder no se entrega, se toma.</q></p>
+        </section>
+
+        <!-- Sección de experiencia con etiquetas de bloque: article, h3, p, ul, li -->
+        <section id="experiencia" class="mb-4 p-4 border rounded">
+          <h2>Experiencia</h2>
+
+          <article class="mb-3">
+            <h3>Consultor Real de Asgard</h3>
+            <p>
+              <time datetime="2011">2011</time> -
+              <time datetime="2017">2017</time>
+            </p>
+            <ul>
+              <li>Diseño de estrategias políticas para la corte de Asgard.</li>
+              <li>Negociaciones con Jotunheim, Sakaar y Midgard.</li>
+              <li>Gestión de crisis con intervención mínima de Thor.</li>
+            </ul>
+          </article>
+
+          <article class="mb-3">
+            <h3>Administrador Temporal de la TVA</h3>
+            <p><time datetime="2021">2021</time> - Actualidad</p>
+            <ul>
+              <li>Supervisión de líneas temporales de alto riesgo.</li>
+              <li>Control de variantes y eventos nexus.</li>
+              <li>Colaboración en estabilidad del multiverso.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Sección de habilidades con lista de descripción y tabla para combinar etiquetas de bloque -->
+        <section id="habilidades" class="mb-4 p-4 border rounded">
+          <h2>Habilidades</h2>
+          <dl>
+            <dt>Ilusionismo</dt>
+            <dd>
+              Creación de dobles, cambios de apariencia y camuflaje mágico.
+            </dd>
+            <dt>Oratoria</dt>
+            <dd>
+              Persuasión avanzada ante reyes, dioses y organizaciones secretas.
+            </dd>
+            <dt>Combate</dt>
+            <dd>Manejo experto de dagas y magia ofensiva de precisión.</dd>
+          </dl>
+
+          <table class="table table-striped">
+            <caption>
+              Nivel de dominio por área
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Área</th>
+                <th scope="col">Nivel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Magia</td>
+                <td>Experto</td>
+              </tr>
+              <tr>
+                <td>Estrategia</td>
+                <td>Experto</td>
+              </tr>
+              <tr>
+                <td>Trabajo en equipo</td>
+                <td>En desarrollo</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <aside
+          class="mb-4 p-3 rounded bg-success bg-opacity-10 border-success border-5"
+        >
+          <h2 class="h5">Dato Relevante</h2>
+          <p class="mb-0">
+            Loki posee alta adaptabilidad en entornos hostiles y excelente
+            capacidad de reinvención profesional.
+          </p>
+        </aside>
+
+        <!-- Formulario de contacto usando etiquetas de formulario: form, fieldset, legend, label, input, select, option, textarea, button -->
+        <section id="contacto" class="mb-4 p-4 border rounded">
+          <h2>Formulario de Contacto</h2>
+          <form action="https://www.google.com/search" method="get">
+            <fieldset class="p-3 border rounded">
+              <legend>Escribile a Loki</legend>
+
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="q"
+                  placeholder="Busca algo de Loki"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo"
+                  name="correo"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="motivo" class="form-label"
+                  >Motivo del contacto</label
+                >
+                <select class="form-select" id="motivo" name="motivo" required>
+                  <option value="">Seleccione una opción</option>
+                  <option value="oferta">Oferta laboral</option>
+                  <option value="alianza">Alianza estratégica</option>
+                  <option value="consulta">Consulta multiversal</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Escribí tu mensaje..."
+                  required
+                  style="overflow: hidden; resize: none"
+                ></textarea>
+              </div>
+
+              <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-success">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+
+      <!-- Pie de página con enlaces inline -->
+      <footer class="pt-3 border-top">
+        <p>
+          CV creado en HTML5 con etiquetas de bloque, inline y formulario.
+          <a href="index.html" class="btn btn-primary btn-sm ms-2"
+            >Volver al inicio</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
