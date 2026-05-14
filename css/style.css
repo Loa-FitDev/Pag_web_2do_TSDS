@@ -1,4 +1,4 @@
-html {
+/* html {
   scroll-behavior: smooth;
 }
 label {
@@ -9,4 +9,126 @@ label {
 .form-label-unico {
   color: red;
   background-color: violet;
+}
+
+/* Selectores */
+/* * {
+  color: black;
+}
+.titulo {
+  color: white;
+  background-color: black;
+  font-style: italic;
+}
+
+label,
+h1 {
+  color: white;
+  background-color: black;
+  font-style: italic;
+}
+
+div h1 label {
+  color: white;
+  background-color: black;
+  font-style: italic;
+}
+
+#email {
+  color: white;
+  background-color: black;
+  font-style: italic;
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: green;
+}
+
+.container-loki-l {
+  background-color: yellow;
+}
+
+#correo {
+  color: green;
+  background-color: yellow;
+}
+
+section h2 {
+  color: green;
+}
+
+h2 > article {
+  color: green;
+  background-color: yellow;
+}
+
+p,
+a {
+  color: green;
+  font: bold;
+}
+
+h3.adm {
+  color: green;
+  background-color: yellow;
+  display: inline-block;
+}
+
+input[type="text"] {
+  border: 2px solid green;
+}
+
+.btn-enviar:hover {
+  background-color: yellow;
+  color: black;
+}
+.btn-reset:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn-reset {
+  background-color: yellow;
+  color: black;
+}
+
+li:first-child {
+  color: green;
+}
+
+p::first-letter {
+  font-size: 32px;
+  color: green;
+}
+
+.importante::before {
+  content: "⚠️ ";
+}
+
+.enlace {
+  background-color: yellow;
+  color: black;
+}
+
+.enlace::after {
+  content: " →";
+}
+
+.enlace:hover {
+  background-color: green;
+  color: white;
+}
+.importante:hover {
+  background-color: green;
+  color: white;
+  text-decoration: underline;
+}
+.importante {
+  background-color: yellow;
+  color: black;
+  text-decoration: underline;
 }
