@@ -15,20 +15,20 @@
       crossorigin="anonymous"
     />
     <title>Etiquetas de Formularios</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container mt-5">
       <h1 class="alert alert-success">Etiquetas de Formularios en HTML</h1>
 
       <!-- Sección de Formulario Básico -->
-      <section class="mb-5">
+      <section class="section-form-basic mb-5">
         <h2>Formulario Básico - &lt;form&gt;</h2>
         <!-- Etiqueta form: contenedor para campos de entrada de datos -->
         <form class="p-4 bg-light rounded">
           <!-- Etiqueta label: define una etiqueta para un campo de entrada -->
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre Completo</label>
+            <label for="nombre" class="form-label-unico">Nombre Completo</label>
             <!-- Etiqueta input type="text": campo de texto simple -->
             <input
               type="text"
@@ -142,7 +142,11 @@
           <div class="mb-3">
             <label for="color" class="form-label">Color Favorito</label>
             <!-- Etiqueta input type="color": selector de color -->
-            <input type="color" class="form-control form-control-color" id="color" />
+            <input
+              type="color"
+              class="form-control form-control-color"
+              id="color"
+            />
           </div>
 
           <!-- Input de rango -->
@@ -232,7 +236,9 @@
               id="superior"
               value="superior"
             />
-            <label class="form-check-label" for="superior">Educación Superior</label>
+            <label class="form-check-label" for="superior"
+              >Educación Superior</label
+            >
           </div>
         </form>
       </section>
@@ -274,7 +280,9 @@
 
           <!-- Select múltiple -->
           <div class="mb-3">
-            <label for="intereses" class="form-label">Intereses (Seleccione varios)</label>
+            <label for="intereses" class="form-label"
+              >Intereses (Seleccione varios)</label
+            >
             <!-- Etiqueta select con atributo multiple: permite seleccionar múltiples opciones -->
             <select class="form-select" id="intereses" multiple>
               <option value="web">Desarrollo Web</option>
@@ -324,7 +332,9 @@
             <!-- Etiqueta legend: proporciona un título para el fieldset -->
             <legend class="form-label">Información Personal</legend>
             <div class="mb-3">
-              <label for="primer-nombre" class="form-label">Primer Nombre</label>
+              <label for="primer-nombre" class="form-label"
+                >Primer Nombre</label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -347,7 +357,9 @@
           <fieldset class="p-3 border rounded">
             <legend class="form-label">Información de Contacto</legend>
             <div class="mb-3">
-              <label for="email-contacto" class="form-label">Correo Electrónico</label>
+              <label for="email-contacto" class="form-label"
+                >Correo Electrónico</label
+              >
               <input
                 type="email"
                 class="form-control"
@@ -425,7 +437,9 @@
           </div>
 
           <div class="mb-3">
-            <label for="patron" class="form-label">Código Postal (3 dígitos)</label>
+            <label for="patron" class="form-label"
+              >Código Postal (3 dígitos)</label
+            >
             <!-- Atributo pattern: valida contra una expresión regular -->
             <input
               type="text"
@@ -459,7 +473,9 @@
       <hr />
       <div class="text-center mt-4 mb-5">
         <a href="index.html" class="btn btn-primary">← Volver al Inicio</a>
-        <a href="etiquetas-block.html" class="btn btn-warning">Ir a Etiquetas Block</a>
+        <a href="etiquetas-block.html" class="btn btn-warning"
+          >Ir a Etiquetas Block</a
+        >
       </div>
     </div>
   </body>
