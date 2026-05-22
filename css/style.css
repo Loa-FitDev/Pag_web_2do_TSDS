@@ -48,6 +48,10 @@ h1 {
   color: green;
 }
 
+h1:hover {
+  cursor: pointer;
+}
+
 .container-loki-l {
   background-color: yellow;
 }
@@ -110,7 +114,7 @@ p::first-letter {
 }
 
 .enlace {
-  background-color: yellow;
+  background-color: rgb(0, 0, 0);
   color: black;
 }
 
@@ -131,4 +135,23 @@ p::first-letter {
   background-color: yellow;
   color: black;
   text-decoration: underline;
+}
+
+body {
+  background: url("../img/img_backg.png") center repeat;
+}
+
+h5 {
+  /* background: linear-gradient(to right, green, yellow); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  border: 2px solid black;
+
+  margin-bottom: 100px;
+}
+
+.link-web-comp {
+  color: white;
 }
