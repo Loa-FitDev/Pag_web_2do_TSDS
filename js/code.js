@@ -127,9 +127,6 @@ const obtenerClientes = async () => {
       throw error;
     }
 
-    app.innerHTML = `<h1>Lista de clientes</h1>`;
-    app.innerHTML += "<hr/>";
-    app.innerHTML += `<button id="btnAgregar" style="margin-bottom: 12px;" class="btn btn-primary">Agregar cliente</button>`;
     console.log(clientes);
     let htmlTabla = "<table class='table table-dark table-striped'>";
     htmlTabla += `<tr>
@@ -159,10 +156,63 @@ const obtenerClientes = async () => {
       )
       .join("");
     htmlTabla += "</table>";
-    app.innerHTML += htmlTabla;
+    app.innerHTML = htmlTabla;
   } catch (error) {
     console.log("OCURRIO UN ERROR " + error);
   }
 };
 
 obtenerClientes();
+
+const btnAdd = document.querySelector("#btnAdd");
+btnAdd.addEventListener("click", async () => {
+  const firstname = document.querySelector("#nombreInput").value.trim();
+  const lastname = document.querySelector("#apellidoInput").value.trim();
+  const dni = document.querySelector("#dniInput").value.trim();
+  const address = document.querySelector("#direccionInput").value.trim();
+
+  if (!firstname || !lastname || !dni || !address) {
+    await Swal.fire({
+      title: "Campos incompletos",
+      text: "Por favor complete todos los campos.",
+      icon: "warning",
+    });
+    return;
+  }
+
+  const { data, error } = await supabase.from("clientes").insert([
+    {
+      firstname,
+      lastname,
+      address,
+      dni,
+    },
+  ]);
+
+  if (error) {
+    console.error("Error al agregar el cliente:", error);
+    await Swal.fire({
+      title: "No se pudo agregar",
+      text: error?.message ?? "Verifique las políticas RLS de Supabase.",
+      icon: "error",
+    });
+    return;
+  }
+
+  const modalEl = document.querySelector("#AddClientModal");
+  const modal = bootstrap.Modal.getInstance(modalEl);
+  if (modal) modal.hide();
+
+  document.querySelector("#nombreInput").value = "";
+  document.querySelector("#apellidoInput").value = "";
+  document.querySelector("#dniInput").value = "";
+  document.querySelector("#direccionInput").value = "";
+
+  await Swal.fire({
+    title: "¡Agregado!",
+    text: `El cliente ${firstname} ${lastname} ha sido agregado.`,
+    icon: "success",
+  });
+
+  await obtenerClientes();
+});
